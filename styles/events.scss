@@ -1,2 +1,92 @@
 // Sækja config
 // Allir stílar fyrir events
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+.events .content {
+  margin-bottom: 2rem;
+  word-break: break-word;
+}
+
+.event {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  min-width: 200px;
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #cccccc;
+}
+
+
+.flipcard-inner{
+  position: absolute;
+  display: flex;
+  left:0;
+  right:0;
+  bottom: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+}
+
+.event .front{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding:0.5rem;
+  display: flex;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event .front h3{
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+}
+.event .back{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.event:hover .flipcard-inner{
+  transform: rotateY(180deg);
+}
+
+.event:last-child {
+  margin-right: 0;
+}
+
+.event h3 {
+  margin-bottom: 1rem;
+}
+
+.event p {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.event ul {
+  list-style: none;
+  font-style: italic;
+}

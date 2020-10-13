@@ -1,2 +1,24 @@
 // Sækja config
 // Allir stílar fyrir "global", þ.e.a.s. type selectorar, reset etc
+
+main {
+
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  color: #222222;
+}
+
+a {
+  color: #222222;
+}
